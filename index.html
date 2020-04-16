@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Nostalgie Fm</title>
+
+  <!-- CSS  -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="font-awesome.css"/>
+</head>
+<body data-hijacking="on">
+<div class="container"> 
+  <div class="background">
+    <img class="responsive-img" src="bg.jpg">
+  </div>
+  
+    <nav class="navbar-extended" id="navbar">
+      <div class="nav-wrapper container">
+        <a href="!#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons left">menu</i></a>
+        <a href="#"><h5 class="center">Nostalgie congo</h5></a>
+   
+
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="bgmg.jpg" alt="">
+          </div>
+          <a href="#user"><img class="circle" src="slide1.jpg" alt=""></a>
+          <a href="#user"><span class="teal-text name">Username</span></a>
+          <a href="#user"><span class="blue-text email">Username@gmail.com</span></a>
+        </div></li>
+<li><div class="divider"></div></li>
+      
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Web</a></li>
+          <li><a href="#">About App</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><div class="divider"></div></li>
+          <li><a href="#">Share</a></li>
+          <li><a href="#">Send</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ 
+<div id="section1">
+
+<div class="bg-img">
+  <img class="responsive-img" src="nst.jpg">
+</div>
+
+<div class="playimg">
+  <img class="responsive-img center" id="myImg1" src="play.jpeg">
+
+</div>
+
+
+<div class="row playertab">
+  <div class="col s12 m12 l12 center">
+        <audio src="" autoplay="true" controls="true" volume="1.0" id="audioplayer"></audio>
+            <i class="medium material-icons" onclick="stopradio()">stop</i>
+            <i class="medium material-icons" onclick="playradio()">play_circle_fill</i>
+            <i class="medium material-icons">mic</i>
+      </div>
+</div>
+
+</div>
+
+</div><!--container-->
+        <!--fab-->
+
+
+<div class="fixed-action-btn active">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">contacts</i>
+    </a>
+    <ul>
+      <li><a href="facebook.html" class="btn-floating blue"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+      </a></li>
+      <li><a class="btn-floating blue lighten-3" light><i class="fa fa-twitter"></i></a></li>
+    </ul>
+  </div>
+        
+  <script>
+    function playradio() {
+      document.getElementById("myImg1").src="played.gif";
+      document.getElementById("audioplayer").src="http://www.partyviberadio.com:8000/;listen.pls?sid=1";
+    }
+  </script>
+
+  <script>
+    function stopradio() {
+      document.getElementById("myImg1").src="play.jpeg";
+      document.getElementById("audioplayer").src="";
+    }
+  </script>
+
+  
+ <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="materialize.js"></script>
+  <script src="init.js"></script>
+
+  </body>
+</html>
