@@ -98,16 +98,16 @@
     }
   </script>
   <script>
-
-window.addEventListener("online", function() {
-  alert("You are online now!");
-});
-
 window.addEventListener("offline", function() {
   alert("Oops! You are offline now!");
 });
 </script>
-  
+<script>
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+  </script>
  <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="materialize.js"></script>
