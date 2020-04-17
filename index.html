@@ -97,7 +97,16 @@
       document.getElementById("audioplayer").src="";
     }
   </script>
+  <script>
 
+window.addEventListener("online", function() {
+  alert("You are online now!");
+});
+
+window.addEventListener("offline", function() {
+  alert("Oops! You are offline now!");
+});
+</script>
   
  <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
