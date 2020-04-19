@@ -7,30 +7,23 @@
 
   <!-- CSS  -->
   <link href="material-icons.css" rel="stylesheet">
+  <!--link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"-->
+
   <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="font-awesome.css"/>
 </head>
 <body data-hijacking="on">
 <div class="container"> 
-
-<div class=loader">
- 
-  <div class="progress">
-      <div class="indeterminate"></div>
-  </div>
-        
-</div>
   <div class="background">
     <img class="responsive-img" src="bg.jpg">
   </div>
   
     <nav class="navbar-extended" id="navbar">
       <div class="nav-wrapper container">
-        <a href="!#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons left">menu</i><h5 class="center">Nostalgie congo</h5></a>
-        
-</div>
-   </nav>
+        <a data-target="slide-out" class="sidenav-trigger"><i class="material-icons left">menu</i></a>
+        <a><h5 class="center">Nostalgie congo</h5></a>
+   
 
       <ul id="slide-out" class="sidenav">
         <li><div class="user-view">
@@ -51,8 +44,8 @@
           <li><a href="#">Share</a></li>
           <li><a href="#">Send</a></li>
       </ul>
-    
- 
+    </div>
+  </nav>
 
  
 <div id="section1">
@@ -70,8 +63,9 @@
 <div class="row playertab">
   <div class="col s12 m12 l12 center">
         <audio src="" autoplay="true" controls="true" volume="1.0" id="audioplayer"></audio>
-            <i class="medium material-icons white circle" onclick="stopradio()">stop</i>
-            <i class="medium material-icons white circle" onclick="playradio()">play_circle_fill</i>
+            <button class="btn-floating small stop" onclick="stopradio()"><i class="medium material-icons istop">stop</i></button>
+            <button class="btn-floating small play" onclick="playradio()"><i class="medium material-icons iplay">play_circle_fill</i></button>
+            
       </div>
 </div>
 
@@ -80,16 +74,10 @@
 </div><!--container-->
         <!--fab-->
 
-
 <div class="fixed-action-btn active">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons">contacts</i>
+    <a href="facebook.html" class="btn-floating btn-large blue">
+      <i class="large material-icons">comment</i>
     </a>
-    <ul>
-      <li><a href="facebook.html" class="btn-floating blue"><i class="fa fa-facebook-square" aria-hidden="true"></i>
-      </a></li>
-      <li><a class="btn-floating blue lighten-3" light><i class="fa fa-twitter"></i></a></li>
-    </ul>
   </div>
         
   <script>
@@ -105,17 +93,8 @@
       document.getElementById("audioplayer").src="";
     }
   </script>
-  <script>
-window.addEventListener("offline", function() {
-  alert("Oops! You are offline now!");
-});
-</script>
-<script>
-window.addEventListener("load", function () {
-    const loader = document.querySelector(".loader");
-    loader.className += " hidden"; // class "loader hidden"
-});
-  </script>
+
+  
  <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="materialize.js"></script>
