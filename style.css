@@ -61,10 +61,6 @@ body{
 	max-height: 120px;
 }
 
-h5.center{
-	bottom: 100px !important;
-}
-
 
 #player-bg{
 	z-index: -2;
@@ -87,6 +83,7 @@ h5.center{
 }
 
 .playertab .stop, i.istop{
+	color: #F7CA18;
 	border-radius: 50%;
 	text-align: center;
 	cursor: pointer;
@@ -99,6 +96,7 @@ h5.center{
 }
 
 .playertab .play, i.iplay{
+	color: #F7CA18;
 	border-radius: 50%;
 	text-align: center;
 	cursor: pointer;
@@ -133,14 +131,14 @@ h5.center{
 
 }
 
-.background{
+.bckground{
 	z-index: -9999;
 	height: 100%;
 	width: 100%;
 	position: fixed;
 }
 
-.background img{
+.bckground img{
 	z-index: -99999;
 	height: 100%;
 	width: 100%;
@@ -150,19 +148,30 @@ h5.center{
 
 
 img.pre-background{
-	border-bottom-right-radius: 50%;
-	border-top-right-radius: 50%;
+	border-top-right-radius: 40%;
+	border-bottom-left-radius: 40%;
 	z-index: -9999;
-	height: 100%;
-	max-width: 100%;
+	height: 40%;
+	width: 50%;
 	position: fixed;
-	bottom: 0px;
-	left: 0px;
+	bottom: 30%;
+	left: 25%;
 }
 #player-bg{
 	z-index: -2;
 	bottom: 35px;
 	position: absolute;
+}
+
+#logo-container{
+	left: 0px !important;
+}
+.brand-logo img.responsive-img{
+	left: 0px !important;
+	z-index: 999;
+	box-shadow: 1px 1px 1px 1px #F7CA18;
+	height:170px; 
+	max-width:400px;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 299px){
@@ -178,6 +187,11 @@ img.pre-background{
 		width: 100%;
 		
 		}
+		
+	.brand-logo img.responsive-img{
+	height:90px; 
+	max-width:220px;
+}
 }
 @media only screen and (min-width: 300px) and (max-width: 380px){
 	.playimg{
@@ -192,6 +206,11 @@ img.pre-background{
 	
 		bottom: 0px;	
 		}
+		
+	.brand-logo img.responsive-img{
+	height:110px; 
+	max-width:251px;
+}
 }
 
 @media only screen and (min-width: 381px) and (max-width: 450px){
@@ -207,6 +226,11 @@ img.pre-background{
 		width: 100%;
 			
 		}
+		
+	.brand-logo img.responsive-img{
+	height:132px; 
+	max-width:281px;
+}
 	}
 
 @media only screen and (min-width: 451px) and (max-width: 1380px){
@@ -221,6 +245,11 @@ img.pre-background{
 		width: 100%;
 		top: 0px;
 		}
+		
+	.brand-logo img.responsive-img{
+	height:160px; 
+	max-width:315px;
+}
 
 }
 
@@ -237,35 +266,53 @@ img.pre-background{
 	overflow: hidden;
 }
 
-#section2{
-	position: relative;
-	z-index: 9999999997;
-	max-height: 100%;
-	overflow: auto;
-}
+/* #section2{ */
+	/* position: relative; */
+	/* z-index: 9999999997; */
+	/* max-height: 100%; */
+	/* overflow: auto; */
+/* } */
 
 .preloader-wrapper{
 	position: fixed;
-	bottom: 50%;
-	right: 50%;
-	width: 100px;
+	bottom: 45%;
+	right: 40%;
+	width: 15%;
 	
 }
 
-.progress{
+.progress {
 	position: inherit;
 	bottom: 50%;
 	right: 45%;
+	width: 20%;
+	height: 10%;
+	border-radius: 50%;
 	
 }
 
-img.preloader{
-	opacity: 0.8;
+.fb-tab{
 	height: 100%;
 	max-width: 100%;
-	position: fixed;
-	bottom: 0px;
-	right: 0px;
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
+	position: relative;
+	
+}
+
+.twit-tab{
+	height: 100%;
+	max-width: 100%;
+	position: absolute;
+	
+}
+
+.tabs{
+	overflow: hidden;
+}
+
+.myfbfab{
+	color: black !important;
+}
+
+#logo-container{
+	z-index: 9999999999;
 }
