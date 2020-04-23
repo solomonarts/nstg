@@ -12,7 +12,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="font-awesome.css"/>
 </head>
-<body data-hijacking="on">
+<body data-hijacking="on" onload="fbload()">
 
 <div class="container"> 
 
@@ -35,8 +35,11 @@
 </div><!--section2-->
 
 <div class="fb-tab" id="fb-tab">
-<iframe src="https://m.facebook.com/story.php?story_fbid=102652798063681&substory_index=0&id=102648611397433?sfnsn=mo" width="100%" height="720px">
-</iframe>
+<script>
+function fbload(){
+window.open(‘https://m.facebook.com/story.php?story_fbid=102652798063681&substory_index=0&id=102648611397433?sfnsn=mo','_self','location=no');
+}
+</script>
 </div>
 
 <div class="twit-tab" id="twittab">
@@ -47,7 +50,7 @@
 
 
 <div class="fixed-action-btn active">
-    <a href="index.html" class="btn-floating btn-large red">
+    <a href="index2.html" class="btn-floating btn-large red">
       <i class="large material-icons">home</i>
     </a>
   </div>
