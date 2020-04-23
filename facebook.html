@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<script>
-    function playradio() {
-      document.getElementById("myImg1").src="img/played.gif";
-      document.getElementById("audioplayer").src="http://www.partyviberadio.com:8000/;listen.pls?sid=1";
-    }
-  </script>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Nostalgie Fm</title>
 
   <!-- CSS  -->
-  <link href="material-icons.css" rel="stylesheet">
+  <link href="css/material-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="font-awesome.css"/>
 </head>
-<body data-hijacking="on" onload="playradio()">
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
-</script>
+<body data-hijacking="on">
+
 <div class="container"> 
 
 
 <div class="fbnav">
   <nav class="navbar" id="navbar2">
-      <div class="nav-wrapper container yellow darken-2">
-        <a id="logo-container" href="#" class="small brand-logo circle left"><img class="responsive-img circle" src="bgmg.jpg"></a>
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="small brand-logo circle left"><img class="responsive-img circle" src="img/bgmg.jpg"></a>
   </div>
-  <div class="row blue">
-          <div class="col s8 push-s4 blue">
+  <div class="row blue lighten-1">
+          <div class="col s8 push-s4 blue lighten-1">
           <ul class="tabs tabs-transparent">
               
               <li class="tab col s3"><a href="#fbtab">Facebook</a></li>
@@ -43,33 +34,29 @@
 </nav>
 </div><!--section2-->
 
-<div class="fb-tab" id="fbtab">
-	<div class="fb-page" data-href="https://www.facebook.com/Nostalgie-Congo-102648611397433/" 
-	data-tabs="timeline" data-width="1020px" data-height="1020px" data-small-header="true" data-adapt-container-width="true" 
-	data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Nostalgie-Congo-102648611397433/" 
-	class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Nostalgie-Congo-102648611397433/">Nostalgie Congo</a></blockquote></div>
+<div class="fb-tab" id="fb-tab">
+<iframe src="https://m.facebook.com/story.php?story_fbid=102652798063681&substory_index=0&id=102648611397433?sfnsn=mo" width="100%" height="720px">
+</iframe>
 </div>
-
 
 <div class="twit-tab" id="twittab">
 
 </div>
 </div><!--container-->
-
- <audio src="" autoplay="true" controls="true" volume="1.0" id="audioplayer"></audio>
         <!--fab-->
 
 
 <div class="fixed-action-btn active">
-    <a href="index2.html" class="btn-floating btn-large yellow darken-2">
-      <i class="large material-icons myfbfab">home</i>
+    <a href="index.html" class="btn-floating btn-large red">
+      <i class="large material-icons">home</i>
     </a>
   </div>
-        
+        <audio src="http://www.partyviberadio.com:8000/;listen.pls?sid=1" autoplay="true" controls="true" volume="1.0" id="audioplayer"></audio>
  <!--  Scripts-->
+ <script type="text/javascript" src="js/index.js"></script>
    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="materialize.js"></script>
-  <script src="init.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
   </body>
 </html>
